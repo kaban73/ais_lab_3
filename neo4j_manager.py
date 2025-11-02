@@ -1,5 +1,5 @@
 from neo4j import GraphDatabase
-from config import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_DATABASE
+from config import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD
 
 
 class Neo4jManager:

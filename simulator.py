@@ -8,7 +8,7 @@ class StreetLightSimulator:
     def __init__(self):
         self.neo4j_manager = Neo4jManager()
         self.engine = InferenceEngine(self.neo4j_manager)
-        self.time = 18  # начальное время
+        self.time = 6  # начальное время
         self.weather_states = ["clear", "cloudy", "rainy"]
         self.current_weather = "clear"
 
@@ -69,4 +69,4 @@ class StreetLightSimulator:
 # Запуск симуляции
 if __name__ == "__main__":
     simulator = StreetLightSimulator()
-    simulator.run_simulation(hours=6)  # Тестируем 6 часов для начала
+    simulator.run_simulation(hours=24)  # Тестируем 6 часов для начала
